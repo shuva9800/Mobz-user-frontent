@@ -47,7 +47,7 @@ export default function Signup() {
     <h1 className='text-3xl text-center font-semibold my-7'>Data Entry</h1>
     <form className='flex flex-col gap-4' onSubmit={submitHandler}>
       <input type='text' placeholder='First Name' className='p-3 border rounded-lg' id='firstName' onChange={changeHandler}/>
-      <input type='text' placeholder='Last Name' className='p-3 border rounded-lg' id='lastName' onChange={changeHandler}/>
+      <input type='text' placeholder='Last Name' className='p-3 bord/er rounded-lg' id='lastName' onChange={changeHandler}/>
       <input type="tel" id='mobileNo' name="phone" placeholder="Phone Number"   className='p-3 border rounded-lg'  onChange={changeHandler}/>
       <input type='email' placeholder='email' className='p-3 border rounded-lg' id='email' onChange={changeHandler}/>
       <input type='text' placeholder='Street' className='p-3 border rounded-lg' id='street' onChange={changeHandler}/>
@@ -62,6 +62,7 @@ export default function Signup() {
       {
         loading? 'Loading...' : 'Save'
       }
+      {/* Save */}
       </button>
     </form>
     <div>
