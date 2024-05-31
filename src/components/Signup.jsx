@@ -39,6 +39,7 @@ export default function Signup() {
       return;
     } 
     setLoading(false);
+    setError(null);
     toast.success("Data entry successful")
     //write navigate path
     // navigate('/getdata')
