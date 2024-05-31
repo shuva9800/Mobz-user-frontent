@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function Signup() {
     const [formData, SetFormData]= useState({ });
@@ -34,8 +36,10 @@ export default function Signup() {
     if(data.success===false){
       setError(data.message);
       setLoading(false);
+      return;
     } 
     setLoading(false);
+    toast.success("Data entry successful")
     //write navigate path
     // navigate('/getdata')
     console.log(data)
