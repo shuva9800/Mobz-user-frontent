@@ -21,7 +21,8 @@ export default function Signup() {
     async function submitHandler(event) {
     event.preventDefault();
     setLoading(true);
-    const response = await fetch('https://mobz-mern-backend.onrender.com/api/v1/signup',
+    // const response = await fetch('https://mobz-mern-backend.onrender.com/api/v1/signup',
+    const response = await fetch('http://localhost:4000/api/v1/signup',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json',

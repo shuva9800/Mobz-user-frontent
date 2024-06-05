@@ -10,6 +10,9 @@ export default function Header() {
         <Link to='/getdata'>
             <p>Get User Data</p>
         </Link>
+        <Link to='/liveroom'>
+            <p>Live Room</p>
+        </Link>
 
     </div>
   )

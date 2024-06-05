@@ -6,7 +6,9 @@ export default function Alldata() {
 
     async function fetchdata(){
       try{
-        const response = await fetch(`https://mobz-mern-backend.onrender.com/api/v1/getdata`);
+        // const response = await fetch(`https://mobz-mern-backend.onrender.com/api/v1/getdata`);
+        const response = await fetch(`http://localhost:4000/api/v1/getdata`);
+
         const value = await response.json();
         setUserData(value.data);
 
