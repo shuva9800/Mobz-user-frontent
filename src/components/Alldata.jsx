@@ -6,10 +6,11 @@ export default function Alldata() {
 
     async function fetchdata(){
       try{
-        // const response = await fetch(`https://mobz-mern-backend.onrender.com/api/v1/getdata`);
-        const response = await fetch(`http://localhost:4000/api/v1/getdata`);
+        const response = await fetch(`https://mobz-mern-backend.onrender.com/api/v1/getdata`);
+        // const response = await fetch(`http://localhost:4000/api/v1/getdata`);
 
         const value = await response.json();
+        console.log(value)
         setUserData(value.data);
 
       }
@@ -27,7 +28,7 @@ export default function Alldata() {
             fetchdata();
         },[]
     );
-    console.log("use state data",userData);
+    // console.log("use state data",userData);
   return (
     <div className='flex items-center flex-col py-4 gap-4'>
          <h2>USER DETAILS IS HERE</h2>
